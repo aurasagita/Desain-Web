@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desain dan Pemrograman Web</title>
+
+        <!-- hubungkan dengan file css -->
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <header class="header-form">
+
+                <!-- buat header untuk penanda halaman -->
+                <h1>Tugas Desain dan Pemrograman Web</h1>
+                <h2>Database Produk Pangan Indonesia</h2>
+            
+            </header>
+
+            <main class="main-form">
+
+                <form method="POST" action="config/create.php" class="input-form">
+
+                    <!-- input nama dari produk -->
+                    <div class="input-form">
+                        <label for="nama-produk">nama produk</label>
+                        <input type="text" placeholder="Masukkan nama produk" 
+                        name="nama-produk" autocomplete="off">
+                    </div>
+
+                    <!-- input harga dari produk -->
+                    <div class="input-form">
+                        <label for="harga-produk">harga produk</label>
+                        <input type="number" placeholder="Masukkan harga produk" 
+                        name="harga-produk" autocomplete="off">
+                    </div>
+
+                    <!-- input stok dari produk -->
+                    <div class="input-form">
+                        <label for="stok-produk">stok produk</label>
+                        <input type="number" placeholder="Masukkan stok produk" 
+                        name="stok-produk" autocomplete="off">
+                    </div>
+
+                    <!-- Buat tombol untuk ngirim datanya -->
+                    <button class="btn-submit" type="submit" name="submit">tambahkan produk</button>
+
+                </form>
+
+            </main>
+    
+        </div>
+
+    </body>
+</html>
